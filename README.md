@@ -8,3 +8,5 @@ When the user submits an answer to a question, the index of which question to di
 
 ### What I would do with more time, etc.
 Oh, I dunno. I'd probably make it prettier: it's pretty barebones right now. Things I might do are: change the colors of some of the fonts (e.g. to indicate whether the player has exceeded the high score at the end), mess around with CSS, and add some cool animations (e.g. transitions). I might also add some unit tests to make sure that I'm handling basic functionality as well as edge cases, especially if I decided to grow the app beyond its current small footprint.
+
+Oh, right—I might also enable the "No" buttons so that they actually did something: that would be cool.
