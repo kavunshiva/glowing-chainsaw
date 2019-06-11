@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Loader } from 'semantic-ui-react';
+import { Dimmer, Loader } from 'semantic-ui-react';
 import { StartGamePrompt } from '../components/StartGamePrompt';
 import { GameEndedPrompt } from '../components/GameEndedPrompt';
 import QuestionPrompt from '../components/QuestionPrompt';
@@ -85,7 +85,7 @@ export default class TriviaGameContainer extends Component {
       score,
     } = this.state;
 
-    if (isFetching) return <Loader />;
+    if (isFetching) return <Dimmer active><Loader /></Dimmer>;
     if (!gameStarted && !gameEnded) {
       return <StartGamePrompt handleStartGame={this.handleStartGame} />;
     }
